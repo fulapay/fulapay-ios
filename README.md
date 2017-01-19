@@ -54,21 +54,19 @@
 	``` 
 
 # 可能遇到的问题
-1. openssl (密钥生成)
+1. openssl (密钥生成)  
+    ````
+    openssl genrsa -out private_key.pem 1024
+    openssl req -new -key private_key.pem -out rsaCertReq.csr
+    openssl x509 -req -days 3650 -in rsaCertReq.csr -signkey private_key.pem -out rsaCert.crt
+    openssl x509 -outform der -in rsaCert.crt -out public_key.der　　　　　　　　　　　　　　　// Create public_key.der For IOS
+    
+    openssl pkcs12 -export -out private_key.p12 -inkey private_key.pem -in rsaCert.crt　　// Create private_key.p12 For IOS. 这一步，请记住你输入的密码，IOS代码里会用到
+    ```` 
+    .der 是付啦服务器的公钥，.p12 是开发者的私钥。
 
-````
-openssl genrsa -out private_key.pem 1024
-openssl req -new -key private_key.pem -out rsaCertReq.csr
-openssl x509 -req -days 3650 -in rsaCertReq.csr -signkey private_key.pem -out rsaCert.crt
-openssl x509 -outform der -in rsaCert.crt -out public_key.der　　　　　　　　　　　　　　　// Create public_key.der For IOS
- 
-openssl pkcs12 -export -out private_key.p12 -inkey private_key.pem -in rsaCert.crt　　// Create private_key.p12 For IOS. 这一步，请记住你输入的密码，IOS代码里会用到
-```` 
-
-.der 是付啦服务器的公钥，.p12 是开发者的私钥。
-
-2. unrecognized selector sent to instance 问题
-
-运行中静态库报 unrecognized 错误时需要在 Build Setting 中的 Other Linker Flag 中添加 -ObjC，注意大小写。如果工程无法使用-ObjC（在第三方库冲突等情况下使用 -ObjC 会报错) 可以使用 -force_load + .a文件地址。
+2. unrecognized selector sent to instance 问题  
+运行中静态库报 unrecognized 错误时需要在 Build Setting 中的 Other Linker Flag 中添加 -ObjC，注意大小写。  
+如果工程无法使用 -ObjC（在第三方库冲突等情况下使用 -ObjC 会报错) 可以使用 -force_load + .a文件地址。
 
 有更多问题请联系官方群。详细文档见 doc 目录
