@@ -13,14 +13,14 @@
 ```
 
 ## 添加 sdk
-### 手动添加
+1. 手动添加
 
 将 .a 文件、其他 .h 文件以及 .xcassets 文件拖到工程中。在需要的地方导入 `#import "XYPayDefine.h"`。
 
-### cocoapods
+2. CocoaPods
 开发中
 
-## 权限添加
+3. 添加权限
 在 info.plist 中添加相机权限 Privacy - Photo Library Usage Description
 
 ## 使用
@@ -43,9 +43,15 @@
 2. 在需要调用支付的地方用 XYPayControl 实例调用对应方法 
  
 	```
-	self.payControl = [[XYPayControl alloc] init];
-	self.payControl.delegate = self;
-	[self.payControl startMPOSTransferWithAmount:10000 goodsDes:@"描述" tradeNo:outTradeNo mobile:@"15280533697" mchId:@"88793741592119799888" recAccountNo:@""];
+    self.payControl = [[XYPayControl alloc] init];
+    self.payControl.delegate = self;
+    [self.payControl startQrPayWithPayType:XYPayTypeWechatQr
+                                    amount:100
+                                      body:@"细叶"
+                                   tradeNo:outTradeNo
+                                    mobile:@"15280533697"
+                                     mchId:@"88793741592119799888"
+                                  authCode:nil];
 	``` 
 
 # 可能遇到的问题
