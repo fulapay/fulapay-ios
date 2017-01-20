@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		228E7EF81E27750C00422D0A /* libXYPayMPosSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 228E7EF71E27750B00422D0A /* libXYPayMPosSDK.a */; };
+		22A1F7A51DCB24EB00629789 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F7A41DCB24EB00629789 /* main.m */; };
+		22A1F7A81DCB24EB00629789 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F7A71DCB24EB00629789 /* AppDelegate.m */; };
+		22A1F7AE1DCB24EB00629789 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A1F7AC1DCB24EB00629789 /* Main.storyboard */; };
+		22A1F7B01DCB24EB00629789 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22A1F7AF1DCB24EB00629789 /* Assets.xcassets */; };
+		22A1F7B31DCB24EB00629789 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22A1F7B11DCB24EB00629789 /* LaunchScreen.storyboard */; };
+		22A1F7BE1DCB24EB00629789 /* XYPayDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F7BD1DCB24EB00629789 /* XYPayDemoTests.m */; };
+		22A1F7C91DCB24EB00629789 /* XYPayDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F7C81DCB24EB00629789 /* XYPayDemoUITests.m */; };
+		22A1F7DF1DCB254900629789 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1F7DE1DCB254900629789 /* CoreBluetooth.framework */; };
+		22A1F7E11DCB255000629789 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1F7E01DCB255000629789 /* AudioToolbox.framework */; };
+		22A1F7E31DCB255800629789 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1F7E21DCB255800629789 /* MediaPlayer.framework */; };
+		22A1F7E51DCB255F00629789 /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 22A1F7E41DCB255F00629789 /* libstdc++.tbd */; };
+		22B292B41E272A810020F85A /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 22B292B31E272A810020F85A /* public_key.der */; };
+		22B292B51E272C590020F85A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 22A1F7AA1DCB24EB00629789 /* ViewController.m */; };
+		22B292BE1E272D2E0020F85A /* XYPayImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22B292BD1E272D2E0020F85A /* XYPayImg.xcassets */; };
+		22B292BF1E272F020020F85A /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 22D7A1E81E2491410016A5EF /* private_key.p12 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		22A1F7BA1DCB24EB00629789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A1F7981DCB24EB00629789 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A1F79F1DCB24EB00629789;
+			remoteInfo = XYPayDemo;
+		};
+		22A1F7C51DCB24EB00629789 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 22A1F7981DCB24EB00629789 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 22A1F79F1DCB24EB00629789;
+			remoteInfo = XYPayDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		228E7EF71E27750B00422D0A /* libXYPayMPosSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXYPayMPosSDK.a; sourceTree = "<group>"; };
+		22A1F7A01DCB24EB00629789 /* XYPayDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYPayDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A1F7A41DCB24EB00629789 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22A1F7A61DCB24EB00629789 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		22A1F7A71DCB24EB00629789 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		22A1F7A91DCB24EB00629789 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		22A1F7AA1DCB24EB00629789 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		22A1F7AD1DCB24EB00629789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		22A1F7AF1DCB24EB00629789 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		22A1F7B21DCB24EB00629789 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		22A1F7B41DCB24EB00629789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A1F7B91DCB24EB00629789 /* XYPayDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYPayDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A1F7BD1DCB24EB00629789 /* XYPayDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPayDemoTests.m; sourceTree = "<group>"; };
+		22A1F7BF1DCB24EB00629789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A1F7C41DCB24EB00629789 /* XYPayDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XYPayDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		22A1F7C81DCB24EB00629789 /* XYPayDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XYPayDemoUITests.m; sourceTree = "<group>"; };
+		22A1F7CA1DCB24EB00629789 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22A1F7DE1DCB254900629789 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		22A1F7E01DCB255000629789 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		22A1F7E21DCB255800629789 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		22A1F7E41DCB255F00629789 /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		22B292201E24DB550020F85A /* XYPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPay.h; sourceTree = "<group>"; };
+		22B292211E24DB550020F85A /* XYPayBaseResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayBaseResp.h; sourceTree = "<group>"; };
+		22B292221E24DB550020F85A /* XYPayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayConfig.h; sourceTree = "<group>"; };
+		22B292231E24DB550020F85A /* XYPayControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayControl.h; sourceTree = "<group>"; };
+		22B292241E24DB550020F85A /* XYPayDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayDefine.h; sourceTree = "<group>"; };
+		22B292B31E272A810020F85A /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		22B292BD1E272D2E0020F85A /* XYPayImg.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XYPayImg.xcassets; sourceTree = "<group>"; };
+		22D7A1E81E2491410016A5EF /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22A1F79D1DCB24EB00629789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A1F7E51DCB255F00629789 /* libstdc++.tbd in Frameworks */,
+				228E7EF81E27750C00422D0A /* libXYPayMPosSDK.a in Frameworks */,
+				22A1F7E31DCB255800629789 /* MediaPlayer.framework in Frameworks */,
+				22A1F7E11DCB255000629789 /* AudioToolbox.framework in Frameworks */,
+				22A1F7DF1DCB254900629789 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A1F7B61DCB24EB00629789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A1F7C11DCB24EB00629789 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22A1F7971DCB24EB00629789 = {
+			isa = PBXGroup;
+			children = (
+				22A1F7A21DCB24EB00629789 /* XYPayDemo */,
+				22A1F7BC1DCB24EB00629789 /* XYPayDemoTests */,
+				22A1F7C71DCB24EB00629789 /* XYPayDemoUITests */,
+				22A1F7A11DCB24EB00629789 /* Products */,
+				22A1F7DD1DCB254900629789 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		22A1F7A11DCB24EB00629789 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22A1F7A01DCB24EB00629789 /* XYPayDemo.app */,
+				22A1F7B91DCB24EB00629789 /* XYPayDemoTests.xctest */,
+				22A1F7C41DCB24EB00629789 /* XYPayDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22A1F7A21DCB24EB00629789 /* XYPayDemo */ = {
+			isa = PBXGroup;
+			children = (
+				22D7A1E81E2491410016A5EF /* private_key.p12 */,
+				22B292B31E272A810020F85A /* public_key.der */,
+				228E7EF71E27750B00422D0A /* libXYPayMPosSDK.a */,
+				22A1F7A61DCB24EB00629789 /* AppDelegate.h */,
+				22A1F7A71DCB24EB00629789 /* AppDelegate.m */,
+				22A1F7A91DCB24EB00629789 /* ViewController.h */,
+				22A1F7AA1DCB24EB00629789 /* ViewController.m */,
+				22A1F7AC1DCB24EB00629789 /* Main.storyboard */,
+				22A1F8421DCB4DA900629789 /* include */,
+				22A1F7AF1DCB24EB00629789 /* Assets.xcassets */,
+				22A1F7B11DCB24EB00629789 /* LaunchScreen.storyboard */,
+				22A1F7B41DCB24EB00629789 /* Info.plist */,
+				22A1F7A31DCB24EB00629789 /* Supporting Files */,
+			);
+			path = XYPayDemo;
+			sourceTree = "<group>";
+		};
+		22A1F7A31DCB24EB00629789 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22A1F7A41DCB24EB00629789 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22A1F7BC1DCB24EB00629789 /* XYPayDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				22A1F7BD1DCB24EB00629789 /* XYPayDemoTests.m */,
+				22A1F7BF1DCB24EB00629789 /* Info.plist */,
+			);
+			path = XYPayDemoTests;
+			sourceTree = "<group>";
+		};
+		22A1F7C71DCB24EB00629789 /* XYPayDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				22A1F7C81DCB24EB00629789 /* XYPayDemoUITests.m */,
+				22A1F7CA1DCB24EB00629789 /* Info.plist */,
+			);
+			path = XYPayDemoUITests;
+			sourceTree = "<group>";
+		};
+		22A1F7DD1DCB254900629789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22A1F7E41DCB255F00629789 /* libstdc++.tbd */,
+				22A1F7E21DCB255800629789 /* MediaPlayer.framework */,
+				22A1F7E01DCB255000629789 /* AudioToolbox.framework */,
+				22A1F7DE1DCB254900629789 /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22A1F8421DCB4DA900629789 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				22D7A1D61E248B200016A5EF /* XYPayMPosSDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		22D7A1D61E248B200016A5EF /* XYPayMPosSDK */ = {
+			isa = PBXGroup;
+			children = (
+				22B292201E24DB550020F85A /* XYPay.h */,
+				22B292211E24DB550020F85A /* XYPayBaseResp.h */,
+				22B292221E24DB550020F85A /* XYPayConfig.h */,
+				22B292231E24DB550020F85A /* XYPayControl.h */,
+				22B292241E24DB550020F85A /* XYPayDefine.h */,
+				22B292BD1E272D2E0020F85A /* XYPayImg.xcassets */,
+			);
+			path = XYPayMPosSDK;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22A1F79F1DCB24EB00629789 /* XYPayDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A1F7CD1DCB24EB00629789 /* Build configuration list for PBXNativeTarget "XYPayDemo" */;
+			buildPhases = (
+				22A1F79C1DCB24EB00629789 /* Sources */,
+				22A1F79D1DCB24EB00629789 /* Frameworks */,
+				22A1F79E1DCB24EB00629789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XYPayDemo;
+			productName = XYPayDemo;
+			productReference = 22A1F7A01DCB24EB00629789 /* XYPayDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		22A1F7B81DCB24EB00629789 /* XYPayDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A1F7D01DCB24EB00629789 /* Build configuration list for PBXNativeTarget "XYPayDemoTests" */;
+			buildPhases = (
+				22A1F7B51DCB24EB00629789 /* Sources */,
+				22A1F7B61DCB24EB00629789 /* Frameworks */,
+				22A1F7B71DCB24EB00629789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A1F7BB1DCB24EB00629789 /* PBXTargetDependency */,
+			);
+			name = XYPayDemoTests;
+			productName = XYPayDemoTests;
+			productReference = 22A1F7B91DCB24EB00629789 /* XYPayDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		22A1F7C31DCB24EB00629789 /* XYPayDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22A1F7D31DCB24EB00629789 /* Build configuration list for PBXNativeTarget "XYPayDemoUITests" */;
+			buildPhases = (
+				22A1F7C01DCB24EB00629789 /* Sources */,
+				22A1F7C11DCB24EB00629789 /* Frameworks */,
+				22A1F7C21DCB24EB00629789 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				22A1F7C61DCB24EB00629789 /* PBXTargetDependency */,
+			);
+			name = XYPayDemoUITests;
+			productName = XYPayDemoUITests;
+			productReference = 22A1F7C41DCB24EB00629789 /* XYPayDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22A1F7981DCB24EB00629789 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = iXiye;
+				TargetAttributes = {
+					22A1F79F1DCB24EB00629789 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S3ZZKNTR42;
+						ProvisioningStyle = Automatic;
+					};
+					22A1F7B81DCB24EB00629789 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S3ZZKNTR42;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22A1F79F1DCB24EB00629789;
+					};
+					22A1F7C31DCB24EB00629789 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S3ZZKNTR42;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 22A1F79F1DCB24EB00629789;
+					};
+				};
+			};
+			buildConfigurationList = 22A1F79B1DCB24EB00629789 /* Build configuration list for PBXProject "XYPayDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 22A1F7971DCB24EB00629789;
+			productRefGroup = 22A1F7A11DCB24EB00629789 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22A1F79F1DCB24EB00629789 /* XYPayDemo */,
+				22A1F7B81DCB24EB00629789 /* XYPayDemoTests */,
+				22A1F7C31DCB24EB00629789 /* XYPayDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22A1F79E1DCB24EB00629789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A1F7B31DCB24EB00629789 /* LaunchScreen.storyboard in Resources */,
+				22A1F7B01DCB24EB00629789 /* Assets.xcassets in Resources */,
+				22A1F7AE1DCB24EB00629789 /* Main.storyboard in Resources */,
+				22B292BE1E272D2E0020F85A /* XYPayImg.xcassets in Resources */,
+				22B292B41E272A810020F85A /* public_key.der in Resources */,
+				22B292BF1E272F020020F85A /* private_key.p12 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A1F7B71DCB24EB00629789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A1F7C21DCB24EB00629789 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22A1F79C1DCB24EB00629789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22B292B51E272C590020F85A /* ViewController.m in Sources */,
+				22A1F7A81DCB24EB00629789 /* AppDelegate.m in Sources */,
+				22A1F7A51DCB24EB00629789 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A1F7B51DCB24EB00629789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A1F7BE1DCB24EB00629789 /* XYPayDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		22A1F7C01DCB24EB00629789 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22A1F7C91DCB24EB00629789 /* XYPayDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		22A1F7BB1DCB24EB00629789 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A1F79F1DCB24EB00629789 /* XYPayDemo */;
+			targetProxy = 22A1F7BA1DCB24EB00629789 /* PBXContainerItemProxy */;
+		};
+		22A1F7C61DCB24EB00629789 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 22A1F79F1DCB24EB00629789 /* XYPayDemo */;
+			targetProxy = 22A1F7C51DCB24EB00629789 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		22A1F7AC1DCB24EB00629789 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A1F7AD1DCB24EB00629789 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		22A1F7B11DCB24EB00629789 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22A1F7B21DCB24EB00629789 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22A1F7CB1DCB24EB00629789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		22A1F7CC1DCB24EB00629789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		22A1F7CE1DCB24EB00629789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3ZZKNTR42;
+				INFOPLIST_FILE = XYPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XYPayDemo",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixiye.fula.pro.XYPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		22A1F7CF1DCB24EB00629789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S3ZZKNTR42;
+				INFOPLIST_FILE = XYPayDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/XYPayDemo",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixiye.fula.pro.XYPayDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		22A1F7D11DCB24EB00629789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S3ZZKNTR42;
+				INFOPLIST_FILE = XYPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixiye.fula.pro.XYPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYPayDemo.app/XYPayDemo";
+			};
+			name = Debug;
+		};
+		22A1F7D21DCB24EB00629789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S3ZZKNTR42;
+				INFOPLIST_FILE = XYPayDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixiye.fula.pro.XYPayDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XYPayDemo.app/XYPayDemo";
+			};
+			name = Release;
+		};
+		22A1F7D41DCB24EB00629789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S3ZZKNTR42;
+				INFOPLIST_FILE = XYPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixiye.fula.pro.XYPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XYPayDemo;
+			};
+			name = Debug;
+		};
+		22A1F7D51DCB24EB00629789 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = S3ZZKNTR42;
+				INFOPLIST_FILE = XYPayDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ixiye.fula.pro.XYPayDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = XYPayDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22A1F79B1DCB24EB00629789 /* Build configuration list for PBXProject "XYPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A1F7CB1DCB24EB00629789 /* Debug */,
+				22A1F7CC1DCB24EB00629789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A1F7CD1DCB24EB00629789 /* Build configuration list for PBXNativeTarget "XYPayDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A1F7CE1DCB24EB00629789 /* Debug */,
+				22A1F7CF1DCB24EB00629789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A1F7D01DCB24EB00629789 /* Build configuration list for PBXNativeTarget "XYPayDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A1F7D11DCB24EB00629789 /* Debug */,
+				22A1F7D21DCB24EB00629789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		22A1F7D31DCB24EB00629789 /* Build configuration list for PBXNativeTarget "XYPayDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22A1F7D41DCB24EB00629789 /* Debug */,
+				22A1F7D51DCB24EB00629789 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22A1F7981DCB24EB00629789 /* Project object */;
+}

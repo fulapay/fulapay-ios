@@ -1,5 +1,4 @@
-# fulapay-ios
-
+# 付啦支付 sdk iOS
 # 上手指南
 
 ## 目录结构
