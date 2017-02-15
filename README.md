@@ -60,7 +60,7 @@
 
 
 # 可能遇到的问题
-1. 怎么生成密钥？
+1. 怎么生成密钥？  
 用 openssl 生成，mac 系统下自带  
     ````
     openssl genrsa -out private_key.pem 1024
@@ -70,17 +70,17 @@
     openssl pkcs12 -export -out private_key.p12 -inkey private_key.pem -in rsaCert.crt　　// Create private_key.p12 For IOS. 这一步，请记住你输入的密码，IOS代码里会用到
     ```` 
 
-2. unrecognized selector sent to instance 问题  
+2. unrecognized selector sent to instance 问题   
 运行中静态库报 unrecognized 错误时需要在 Build Setting 中的 Other Linker Flag 中添加 -ObjC，注意大小写。  
 如果工程无法使用 -ObjC（在第三方库冲突等情况下使用 -ObjC 会报错) 可以使用 -force_load + .a文件地址。
 
 3. 密钥好多，我到底该怎么做  
 工程需要的密钥有两个，分别为：
-- .p12 格式的私钥.   
-这是开发者自己生成并且和服务器注册过的私钥。这个私钥用来保证服务器与客户端数据的一致性。如何在服务器注册请联系客服。 qq:233891975  
-- .der 格式的公钥.   
-这是服务器的公钥,用来验证客户端收到的数据未被修改。这个密钥在 cert 目录下获得。     
-需要注意的是，测试服务器和生产环境的服务器的公钥是不同的
+    - .p12 格式的私钥.   
+    这是开发者自己生成并且和服务器注册过的私钥。这个私钥用来保证服务器与客户端数据的一致性。如何在服务器注册请联系客服。 qq:233891975  
+    - .der 格式的公钥.   
+    这是服务器的公钥,用来验证客户端收到的数据未被修改。这个密钥在 cert 目录下获得。     
+    需要注意的是，测试服务器和生产环境的服务器的公钥是不同的
 
 4. 设置密钥好麻烦，我只想测试一下  
 用 cert 目录下的 rsa_private_key.p12 和 rsa_public_key.der 来测试，或者直接看demo。
