@@ -12,7 +12,7 @@
 ```
 
 ## 接入 sdk
-1. 手动接入
+1. 手动接入  
     - 将 .a 文件以及 include 文件夹一起拖到工程中。在需要的地方导入 `#import "XYPayDefine.h"`。
     - 在 info.plist 中添加相机权限 Privacy - Photo Library Usage Description
 
@@ -27,7 +27,7 @@
     XYPayConfig *config = [[XYPayConfig alloc] init];
     config.notifyUrl = @"127.0.0.1";
     config.mchCreateIp = @"127.0.0.1";
-    config.isProduction = NO;      // 不是生成环境
+    config.isProduction = NO;      // 测试环境
     config.enableDebug = YES;      // 打印日志
     config.withdrawType = @"1";
     config.derFileName = @"public_key";
@@ -51,7 +51,7 @@
                                      mchId:@"88793741592119799888"
                                   authCode:nil];
 	``` 
-3. 支付回调
+3. 支付回调  
 在成功请求服务器后 sdk 会调用 control:resp: 方法返回必须的数据。其中 resp 是个 XYPayBaseResp 实例，resp 各个参数的具体含义请看 doc 目录下具体的文档。
 
 
@@ -73,14 +73,14 @@
 
 3. 密钥好多，我到底该怎么做  
 工程需要的密钥有两个，分别为：
-    - .p12 格式的私钥.   
+    - .p12 格式的私钥     
     这是开发者自己生成并且和服务器注册过的私钥。这个私钥用来保证服务器与客户端数据的一致性。如何在服务器注册请联系客服。 qq:233891975  
-    - .der 格式的公钥.   
+    - .der 格式的公钥  
     这是服务器的公钥,用来验证客户端收到的数据未被修改。这个密钥在 cert 目录下获得。     
-    需要注意的是，测试服务器和生产环境的服务器的公钥是不同的
+    需要注意的是，测试服务器和生产环境的服务器的公钥是不同的。
 
 4. 设置密钥好麻烦，我只想测试一下  
-用 cert 目录下的 rsa_private_key.p12 和 rsa_public_key.der 来测试，或者直接看demo。
+用 cert 目录下的 rsa_private_key.p12 和 rsa_public_key.der 来测试，或者直接看demo。注意 appId 和密钥要对应。
 
 5. SDK 会不会很大  
 付啦支付 SDK 的所有代码大小为 150 KB左右，加上必要的图片资料也不会很大。但是大额转账 SDK 因为涉及到了硬件所以会大一些。
