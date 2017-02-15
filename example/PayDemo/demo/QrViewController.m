@@ -34,8 +34,9 @@
 
 - (void)control:(XYPayControl *)control resp:(XYPayBaseResp *)resp
 {
+    NSDictionary *data = resp.data;
     dispatch_async(dispatch_get_main_queue(), ^{
-        self.imageView.image = resp.qrImage;
+        self.imageView.image = data[@"qrImage"];
     });
 }
 

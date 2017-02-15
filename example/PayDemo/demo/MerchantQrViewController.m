@@ -30,10 +30,10 @@
 
 - (void)control:(XYPayControl *)control resp:(XYPayBaseResp *)resp
 {
-    NSLog(@"%@", resp.url);
+    NSDictionary *data = resp.data;
     dispatch_async(dispatch_get_main_queue(), ^{
         
-        self.imageView.image = resp.qrImage;
+        self.imageView.image = data[@"qrImage"];
     });
 }
 

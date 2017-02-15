@@ -23,7 +23,9 @@
     config.enableDebug = YES;
     config.notifyUrl = @"127.0.0.1";
     config.mchCreateIp = @"127.0.0.1";
-    [XYPay setupWithAppId:@"1000015" appKey:@"sdaf8eadf" config:config];
+    config.derFileName = @"public_key";
+    config.p12FileName = @"private_key";
+    [XYPay setupWithAppId:@"1000015" appKey:@"aSsdaG%#f8eaLdf" config:config];
     [XYPay setRSAPassword:@"123456"];
     return YES;
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		220541BB1E5458B6003DD328 /* XYPayImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 220541BA1E5458B6003DD328 /* XYPayImg.xcassets */; };
+		220541BD1E545CCE003DD328 /* libXYPaySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 220541BC1E545CCE003DD328 /* libXYPaySDK.a */; };
 		226A29091E2C5DF800C9AC8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A29081E2C5DF800C9AC8A /* main.m */; };
 		226A290C1E2C5DF800C9AC8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A290B1E2C5DF800C9AC8A /* AppDelegate.m */; };
 		226A290F1E2C5DF800C9AC8A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A290E1E2C5DF800C9AC8A /* ViewController.m */; };
@@ -15,12 +17,10 @@
 		226A29171E2C5DF800C9AC8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 226A29151E2C5DF800C9AC8A /* LaunchScreen.storyboard */; };
 		226A29221E2C5DF800C9AC8A /* demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A29211E2C5DF800C9AC8A /* demoTests.m */; };
 		226A292D1E2C5DF800C9AC8A /* demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A292C1E2C5DF800C9AC8A /* demoUITests.m */; };
-		226A29441E2C5FA800C9AC8A /* XYPayImg.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 226A29421E2C5FA800C9AC8A /* XYPayImg.xcassets */; };
 		226A294C1E2C61BC00C9AC8A /* QrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A294B1E2C61BC00C9AC8A /* QrViewController.m */; };
 		226A296B1E2C6BC600C9AC8A /* MerchantQrViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 226A296A1E2C6BC600C9AC8A /* MerchantQrViewController.m */; };
 		226A29791E2C792400C9AC8A /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 226A29771E2C792400C9AC8A /* public_key.der */; };
 		226A297A1E2C792400C9AC8A /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 226A29781E2C792400C9AC8A /* private_key.p12 */; };
-		226A297C1E2C7A8F00C9AC8A /* libXYPaySDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 226A297B1E2C7A8F00C9AC8A /* libXYPaySDK.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +41,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		220541B51E5458B6003DD328 /* XYPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPay.h; sourceTree = "<group>"; };
+		220541B61E5458B6003DD328 /* XYPayBaseResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayBaseResp.h; sourceTree = "<group>"; };
+		220541B71E5458B6003DD328 /* XYPayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayConfig.h; sourceTree = "<group>"; };
+		220541B81E5458B6003DD328 /* XYPayControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayControl.h; sourceTree = "<group>"; };
+		220541B91E5458B6003DD328 /* XYPayDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayDefine.h; sourceTree = "<group>"; };
+		220541BA1E5458B6003DD328 /* XYPayImg.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XYPayImg.xcassets; sourceTree = "<group>"; };
+		220541BC1E545CCE003DD328 /* libXYPaySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXYPaySDK.a; sourceTree = "<group>"; };
 		226A29041E2C5DF800C9AC8A /* demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		226A29081E2C5DF800C9AC8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		226A290A1E2C5DF800C9AC8A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -57,19 +64,12 @@
 		226A29281E2C5DF800C9AC8A /* demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		226A292C1E2C5DF800C9AC8A /* demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = demoUITests.m; sourceTree = "<group>"; };
 		226A292E1E2C5DF800C9AC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		226A29421E2C5FA800C9AC8A /* XYPayImg.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = XYPayImg.xcassets; sourceTree = "<group>"; };
 		226A294A1E2C61BC00C9AC8A /* QrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QrViewController.h; sourceTree = "<group>"; };
 		226A294B1E2C61BC00C9AC8A /* QrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QrViewController.m; sourceTree = "<group>"; };
-		226A29521E2C63D600C9AC8A /* XYPay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPay.h; sourceTree = "<group>"; };
-		226A29531E2C63D600C9AC8A /* XYPayBaseResp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayBaseResp.h; sourceTree = "<group>"; };
-		226A29541E2C63D600C9AC8A /* XYPayConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayConfig.h; sourceTree = "<group>"; };
-		226A29561E2C63D600C9AC8A /* XYPayDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayDefine.h; sourceTree = "<group>"; };
 		226A29691E2C6BC600C9AC8A /* MerchantQrViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MerchantQrViewController.h; sourceTree = "<group>"; };
 		226A296A1E2C6BC600C9AC8A /* MerchantQrViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MerchantQrViewController.m; sourceTree = "<group>"; };
-		226A296E1E2C6FDD00C9AC8A /* XYPayControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYPayControl.h; sourceTree = "<group>"; };
 		226A29771E2C792400C9AC8A /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
 		226A29781E2C792400C9AC8A /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
-		226A297B1E2C7A8F00C9AC8A /* libXYPaySDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libXYPaySDK.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				226A297C1E2C7A8F00C9AC8A /* libXYPaySDK.a in Frameworks */,
+				220541BD1E545CCE003DD328 /* libXYPaySDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +98,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		220541B31E5458B6003DD328 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				220541B41E5458B6003DD328 /* XYPaySDK */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		220541B41E5458B6003DD328 /* XYPaySDK */ = {
+			isa = PBXGroup;
+			children = (
+				220541B51E5458B6003DD328 /* XYPay.h */,
+				220541B61E5458B6003DD328 /* XYPayBaseResp.h */,
+				220541B71E5458B6003DD328 /* XYPayConfig.h */,
+				220541B81E5458B6003DD328 /* XYPayControl.h */,
+				220541B91E5458B6003DD328 /* XYPayDefine.h */,
+				220541BA1E5458B6003DD328 /* XYPayImg.xcassets */,
+			);
+			path = XYPaySDK;
+			sourceTree = "<group>";
+		};
 		226A28FB1E2C5DF800C9AC8A = {
 			isa = PBXGroup;
 			children = (
@@ -132,9 +153,9 @@
 				226A294B1E2C61BC00C9AC8A /* QrViewController.m */,
 				226A29771E2C792400C9AC8A /* public_key.der */,
 				226A29781E2C792400C9AC8A /* private_key.p12 */,
-				226A293A1E2C5FA800C9AC8A /* include */,
+				220541B31E5458B6003DD328 /* include */,
+				220541BC1E545CCE003DD328 /* libXYPaySDK.a */,
 				226A29131E2C5DF800C9AC8A /* Assets.xcassets */,
-				226A297B1E2C7A8F00C9AC8A /* libXYPaySDK.a */,
 				226A29151E2C5DF800C9AC8A /* LaunchScreen.storyboard */,
 				226A29181E2C5DF800C9AC8A /* Info.plist */,
 				226A29071E2C5DF800C9AC8A /* Supporting Files */,
@@ -166,27 +187,6 @@
 				226A292E1E2C5DF800C9AC8A /* Info.plist */,
 			);
 			path = demoUITests;
-			sourceTree = "<group>";
-		};
-		226A293A1E2C5FA800C9AC8A /* include */ = {
-			isa = PBXGroup;
-			children = (
-				226A29411E2C5FA800C9AC8A /* XYPaySDK */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		226A29411E2C5FA800C9AC8A /* XYPaySDK */ = {
-			isa = PBXGroup;
-			children = (
-				226A29521E2C63D600C9AC8A /* XYPay.h */,
-				226A296E1E2C6FDD00C9AC8A /* XYPayControl.h */,
-				226A29531E2C63D600C9AC8A /* XYPayBaseResp.h */,
-				226A29541E2C63D600C9AC8A /* XYPayConfig.h */,
-				226A29561E2C63D600C9AC8A /* XYPayDefine.h */,
-				226A29421E2C5FA800C9AC8A /* XYPayImg.xcassets */,
-			);
-			path = XYPaySDK;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,9 +299,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				226A29171E2C5DF800C9AC8A /* LaunchScreen.storyboard in Resources */,
-				226A29441E2C5FA800C9AC8A /* XYPayImg.xcassets in Resources */,
 				226A29141E2C5DF800C9AC8A /* Assets.xcassets in Resources */,
 				226A29121E2C5DF800C9AC8A /* Main.storyboard in Resources */,
+				220541BB1E5458B6003DD328 /* XYPayImg.xcassets in Resources */,
 				226A29791E2C792400C9AC8A /* public_key.der in Resources */,
 				226A297A1E2C792400C9AC8A /* private_key.p12 in Resources */,
 			);

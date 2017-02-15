@@ -43,6 +43,20 @@ typedef NS_ENUM(NSInteger, XYPayType)
     XYPayTypeSuperTransfer,
 };
 
+
+/**
+ 商户进件时的类型
+
+ - XYPayMchEnterTypeNew: 添加新的商户基本资料
+ - XYPayMchEnterTypeEdit: 修改商户基本资料
+ - XYPayMchEnterTypeSetPhotos: 上传身份证和银行卡照片
+ */
+typedef NS_ENUM(NSInteger, XYPayMchEnterType)
+{
+    XYPayMchEnterTypeNew,
+    XYPayMchEnterTypeEdit,
+};
+
 /**
  支付状态
 
