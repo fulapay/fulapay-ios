@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
     s.ios.deployment_target = '7.0'
     s.platform              = :ios
     s.source_files          = 'sdk/XYPaySDK/XYPaySDK.framework/Headers/*.h'
+    s.vendored_frameworks   = 'sdk/XYPaySDK/XYPaySDK.framework'
 end
