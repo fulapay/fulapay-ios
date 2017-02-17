@@ -13,8 +13,13 @@
 
 ## 接入 sdk
 1. 手动接入  
-    - 将 .a 文件以及 include 文件夹一起拖到工程中。在需要的地方导入 `#import <XYPaySDK/XYPayDefine.h>`。
+    - 将 framework 文件夹拖到工程中。在需要的地方导入 `#import "XYPayDefine.h"`。
     - 在 info.plist 中添加相机权限 Privacy - Photo Library Usage Description
+
+2. 使用 CocoaPods  
+    - 在 Podfile 中添加 `pod 'fulapay-ios', :git=>"https://github.com/fulapay/fulapay-ios.git"`  
+    - 运行 `pod install`
+    - 在需要的地方导入 `#import <XYPaySDK/XYPayDefine.h>`。
 
 ## 使用
 
@@ -94,5 +99,6 @@
 
 |日期|版本|描述|  
 | ---------- | -----------| ---------- |  
+|2017.2.17|1.0.2|优化 sdk 大小，添加 CocoaPods 支持|  
 |2017.1.16|1.0.1|优化回调返回的参数，使其更加合理，支持个人及企业商户进件，查询交易订单|  
 |2016.12.21|1.0.0|完成付啦支付基本功能, 支持 mpos 大额转账、二维码收款、扫码支付、统一支付，支持RSA加密验签|  
