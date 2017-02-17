@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
     s.name                  = 'fulapay-ios'
-    s.version               = '1.0.2'
+    s.version               = '1.0.3'
     s.license               = { :type => 'Copyright', :text => 'Copyright 2016 ixiye.com. All rights reserved.'}
     s.summary               = 'Fulapay SDK for iOS'
     s.homepage              = 'https://github.com/fulapay/fulapay-ios'
