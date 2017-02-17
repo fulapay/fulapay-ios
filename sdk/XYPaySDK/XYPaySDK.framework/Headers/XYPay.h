@@ -16,17 +16,17 @@
 @interface XYPay : NSObject
 
 /**
- 当前设置的 appId
+ 获取当前设置的 appId
  */
 + (NSString *)appId;
 
 /**
- 当前设置的 appKey
+ 获取当前设置的 appKey
  */
 + (NSString *)appKey;
 
 /**
- 当前 sdk 版本号
+ 获取当前 sdk 版本号
  */
 + (NSString *)version;
 

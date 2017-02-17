@@ -14,7 +14,7 @@
 
  - XYPayTypeDefault: 未设定类型
  - XYPayTypeUnionPay: 银联支付
- - XYPayTypeWechatAppPay: 微信 App 支付
+ - XYPayTypeWechatAppPay: 微信 App 支付,现在只用于升级
  - XYPayTypeWechatQr: 微信二维码
  - XYPayTypeWechatScan: 微信扫码
  - XYPayTypeAlipayQr: 支付宝二维码
@@ -22,7 +22,7 @@
  - XYPayTypeMpos: Mpos 支付刷卡
  - XYPayTypeMposPlugin: Mpos 支付插件
  - XYPayTypeUnifiedPay: 统一支付，就是店铺二维码
- - XYPayTypeUnifiedPay: 统一支付中的嗨卡
+ - XYPayTypeUnifiedPa统一支付中的嗨卡
  - XYPayTypeSuperTransfer: MPOS 大额转账
  - XYPayTypeAllScan: 扫码
  - XYPayTypeAllQr: 二维码
@@ -41,6 +41,20 @@ typedef NS_ENUM(NSInteger, XYPayType)
     XYPayTypeUnifiedPay = 100,
     XYPayTypeUnifiedPayCard,
     XYPayTypeSuperTransfer,
+};
+
+
+/**
+ 商户进件时的类型
+
+ - XYPayMchEnterTypeNew: 添加新的商户基本资料
+ - XYPayMchEnterTypeEdit: 修改商户基本资料
+ - XYPayMchEnterTypeSetPhotos: 上传身份证和银行卡照片
+ */
+typedef NS_ENUM(NSInteger, XYPayMchEnterType)
+{
+    XYPayMchEnterTypeNew,
+    XYPayMchEnterTypeEdit,
 };
 
 /**
