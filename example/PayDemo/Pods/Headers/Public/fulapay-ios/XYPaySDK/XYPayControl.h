@@ -1,0 +1,1 @@
+../../../../fulapay-ios/sdk/XYPaySDK/XYPaySDK.framework/Headers/XYPayControl.h

@@ -1,0 +1,24 @@
+{
+  "name": "fulapay-ios",
+  "version": "1.0.2",
+  "license": {
+    "type": "Copyright",
+    "text": "Copyright 2016 ixiye.com. All rights reserved."
+  },
+  "summary": "Fulapay SDK for iOS",
+  "homepage": "https://github.com/fulapay/fulapay-ios",
+  "authors": {
+    "Hua Wen": "394220838@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/fulapay/fulapay-ios.git",
+    "tag": "1.0.2"
+  },
+  "requires_arc": true,
+  "platforms": {
+    "ios": null
+  },
+  "source_files": "sdk/XYPaySDK/XYPaySDK.framework/Headers/*.h",
+  "vendored_frameworks": "sdk/XYPaySDK/XYPaySDK.framework",
+  "resources": "sdk/XYPaySDK/XYPaySDK.framework/Assets.car"
+}

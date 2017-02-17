@@ -1,0 +1,21 @@
+PODS:
+  - fulapay-ios (1.0.2)
+
+DEPENDENCIES:
+  - fulapay-ios (from `https://github.com/fulapay/fulapay-ios.git`)
+
+EXTERNAL SOURCES:
+  fulapay-ios:
+    :git: https://github.com/fulapay/fulapay-ios.git
+
+CHECKOUT OPTIONS:
+  fulapay-ios:
+    :commit: 28b8a0f9fa99c6ad0f4228f1c16352984c14cb46
+    :git: https://github.com/fulapay/fulapay-ios.git
+
+SPEC CHECKSUMS:
+  fulapay-ios: 4a58d501d726242b9badaa38683099a0ef4c5edd
+
+PODFILE CHECKSUM: 5918210562c990ae5628474aa0b2a46f92a57de3
+
+COCOAPODS: 1.1.1

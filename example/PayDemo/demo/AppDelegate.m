@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "XYPayDefine.h"
+#import <XYPaySDK/XYPayDefine.h>
 
 @interface AppDelegate ()
 

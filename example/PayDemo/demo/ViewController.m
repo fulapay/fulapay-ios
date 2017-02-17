@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "MerchantQrViewController.h"
-#import "XYPayControl.h"
+#import <XYPaySDK/XYPayDefine.h>
 #import "QrViewController.h"
 
 @interface ViewController ()

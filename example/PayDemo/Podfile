@@ -1,0 +1,5 @@
+target 'demo' do
+
+pod 'fulapay-ios', :git=>"https://github.com/fulapay/fulapay-ios.git"
+
+end
