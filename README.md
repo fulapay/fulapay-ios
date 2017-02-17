@@ -13,7 +13,7 @@
 
 ## 接入 sdk
 1. 手动接入  
-    - 将 .a 文件以及 include 文件夹一起拖到工程中。在需要的地方导入 `#import "XYPayDefine.h"`。
+    - 将 .a 文件以及 include 文件夹一起拖到工程中。在需要的地方导入 `#import <XYPaySDK/XYPayDefine.h>`。
     - 在 info.plist 中添加相机权限 Privacy - Photo Library Usage Description
 
 ## 使用
