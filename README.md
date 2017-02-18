@@ -14,13 +14,13 @@
 ## 接入 sdk
 1. 手动接入  
     - 将 framework 文件夹拖到工程中。在需要的地方导入 `#import "XYPayDefine.h"`。
-    - 在 info.plist 中添加相机权限 Privacy - Photo Library Usage Description
+    - 在 info.plist 中添加相机权限 Privacy - Camera Usage Description
 
 2. 使用 CocoaPods  
     - 在 Podfile 中添加 `pod 'fulapay-ios', :git=>"https://github.com/fulapay/fulapay-ios.git"`  
     - 运行 `pod install`
     - 在需要的地方导入 `#import <XYPaySDK/XYPayDefine.h>`。
-    - 在 info.plist 中添加相机权限 Privacy - Photo Library Usage Description
+    - 在 info.plist 中添加相机权限 Privacy - Camera Usage Description
 
 ## 使用
 
