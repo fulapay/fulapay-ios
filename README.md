@@ -1,7 +1,7 @@
 # 付啦支付 (iOS)
-# 上手指南
+## 上手指南
 
-## 目录结构
+### 目录结构
 
 ```
 |
@@ -11,7 +11,7 @@
 |-cert      相关的密钥
 ```
 
-## 接入 sdk
+### 接入 sdk
 1. 手动接入  
     - 将 framework 文件夹拖到工程中。在需要的地方导入 `#import "XYPayDefine.h"`。
     - 在 info.plist 中添加相机权限 Privacy - Camera Usage Description
@@ -22,9 +22,9 @@
     - 在需要的地方导入 `#import <XYPaySDK/XYPayDefine.h>`。
     - 在 info.plist 中添加相机权限 Privacy - Camera Usage Description
 
-## 使用
+### 使用
 
-0. 证书设置
+0. 证书设置  
 在开发者本地生成密钥以及对应的公钥，并将公钥转换为 .p12 格式以支持 iOS 平台。然后同服务器的 der 格式公钥（cert 目录下有）一起放入工程中。
 
 1. 在 AppDelegate 中初始化 XYPay  
@@ -43,9 +43,9 @@
     [XYPay setRSAPassword:@"123456"];
     ```
 
-2. 在需要调用支付的地方用 XYPayControl 实例调用对应方法 
- 
+2. 在需要调用支付的地方用 XYPayControl 实例调用对应方法   
  以下例子是调用二维码支付
+
 	```
     self.payControl = [[XYPayControl alloc] init];
     self.payControl.delegate = self;
@@ -57,12 +57,13 @@
                                      mchId:@"88793741592119799888"
                                   authCode:nil];
 	``` 
+
 3. 支付回调  
 在成功请求服务器后 sdk 会调用 control:resp: 方法返回必须的数据。其中 resp 是个 XYPayBaseResp 实例，resp 各个参数的具体含义请看 doc 目录下具体的文档。
 
 
 
-# FQA
+## FQA
 1. 怎么生成密钥？  
 用 openssl 生成，mac 系统下自带  
     ````
@@ -96,7 +97,7 @@
 
 有更多问题请联系 qq:3222492104 。详细文档见 doc 目录  
 
-# 更新日志
+## 更新日志
 
 |日期|版本|描述|  
 | ---------- | -----------| ---------- |  
